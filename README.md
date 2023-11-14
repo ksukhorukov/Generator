@@ -1,6 +1,6 @@
 # Permutations Generator
 
-## Generation Of Predefined Length Permutions According To The Predefined Dicitionary 
+## Generation Of Predefined Length Permutations According To The Predefined Dictionary
 
 # Usage 
 
