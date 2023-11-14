@@ -10,14 +10,12 @@ class Generator
   PASSWORD_SIZE = 36
 
   def initialize
-    @total_dictionary = ('а'..'я').to_a + 
+    @total_dick = ('а'..'я').to_a + 
       ('А'..'Я').to_a + 
       ('a'..'z').to_a + 
       ('A'..'Z').to_a + 
       ('0'..'9').to_a +
       ('!'..'?').to_a
-  
-    pp total_dictionary
   end 
 
   private
@@ -30,4 +28,4 @@ end
 
 o = Generator.new 
 
-puts o.total_dick
+puts o.total_dick.join('')
