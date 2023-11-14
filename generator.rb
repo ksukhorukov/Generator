@@ -9,11 +9,17 @@ class Generator
   PASSWORD_SIZE = 36
 
   def initialize(size = 15)
+    return usage if ARGV.count < 2
+
     @permutations = []
     @size = size 
     @dictionary = dictionary_generator
 
     generate_all_permutations(size)
+  end 
+
+  def usage
+    puts "Usage: #{$0} -n <number_of_chars>"
   end 
 
   def generate_permutations_of_the_size(n = 1)
@@ -59,6 +65,6 @@ class Generator
   end
 end
 
-o = Generator.new(3)
+o = Generator.new(20)
 
-o.print_permutations
+# o.print_permutations
