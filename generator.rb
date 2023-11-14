@@ -5,11 +5,12 @@ require 'pp'
 
 class Generator 
   attr_accessor :dictionsry, :dictionary, :total_dick
-  attr_reader :total_dictionary, :spicial_symbolsm, :total_dick
+  attr_reader :total_dictionary, :spicial_symbolsm, :total_dick, :size
 
   PASSWORD_SIZE = 36
 
-  def initialize
+  def initialize(size = 15)
+    @size = size 
     @total_dick = ('а'..'я').to_a + 
       ('А'..'Я').to_a + 
       ('a'..'z').to_a + 
@@ -24,6 +25,9 @@ class Generator
     result = e.map { |c| c }
     puts result
   end 
+
+  def generate_permutations_of_the_size(n)
+  end
 end
 
 o = Generator.new 
