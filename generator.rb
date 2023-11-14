@@ -25,9 +25,11 @@ class Generator
       for j in 1...dictionary.size do 
         current_permutation[i] = dictionary[j]
         puts current_permutation
-        permutations << current_permutation
+        @permutations << current_permutation
       end
     end
+
+    @permutations = @permutations.uniq
   end
 
 
@@ -57,6 +59,6 @@ class Generator
   end
 end
 
-o = Generator.new(5)
+o = Generator.new(3)
 
 o.print_permutations
