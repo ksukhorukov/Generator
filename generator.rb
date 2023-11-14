@@ -65,6 +65,4 @@ class Generator
   end
 end
 
-o = Generator.new(20)
-
-# o.print_permutations
+o = Generator.new(ARGV[1].to_i)
