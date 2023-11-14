@@ -4,14 +4,13 @@ require 'byebug'
 require 'pp'
 
 class Generator 
-  attr_accessor :dictionsry, :dictionary, :total_dick
-  attr_reader :total_dictionary, :spicial_symbolsm, :total_dick, :size
-
+  attr_reader :dictionary, :size
+  
   PASSWORD_SIZE = 36
 
   def initialize(size = 15)
     @size = size 
-    @total_dick = ('а'..'я').to_a + 
+    @dictionary = ('а'..'я').to_a + 
       ('А'..'Я').to_a + 
       ('a'..'z').to_a + 
       ('A'..'Z').to_a + 
@@ -19,17 +18,18 @@ class Generator
       ('!'..'?').to_a
   end 
 
+  def generate_permutations_of_the_size(n = 1)
+    if n == 1 then dictionary.map { |c| puts c } end 
+  end
+
   private
 
   def to_array(e)
     result = e.map { |c| c }
     puts result
   end 
-
-  def generate_permutations_of_the_size(n)
-  end
 end
 
 o = Generator.new 
 
-puts o.total_dick.join('')
+o.generate_permutations_of_the_size
