@@ -38,7 +38,7 @@ class Generator
   end
 
   def print_permutations
-    permutations.each { |i| puts permutations[i] }
+    permutations.each { |e| puts e }
   end
 
   private
