@@ -1,6 +1,8 @@
 # Permutations Generator
 
-## Generation Of Predefined Length Permutations According To The Predefined Dictionary
+## Generation Of Predefined Length Permutations According To The Predefined Dictionary Set
+
+Languages Supported: English, Russian
 
 # Usage 
 
