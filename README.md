@@ -1,4 +1,4 @@
-# Generator
+# Permutations Generator
 
 ## Generation Of Predefined Length Permutions According To The Predefined Dicitionary 
 
